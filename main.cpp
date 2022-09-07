@@ -3,7 +3,12 @@
 void t1(int b, int c){
 
     if (b == 0){
-        std::cout<<"Нет решений";
+        if (c == 0){
+            std::cout<<"Любое число";
+
+        }else{
+            std::cout<<"Нет решений";
+        }
     }else{
         std::cout<<(-c)/b;
     };
@@ -58,6 +63,7 @@ void lds(bool l, bool d, bool s){
 };
 int main()
 {
+    setlocale(LC_ALL, "Rus");
     int a,b,c;
     std::cout<<"Введите коэффициенты b,c для уравнения вида b*x + c = 0"<< std::endl;
     std::cin>>b;
