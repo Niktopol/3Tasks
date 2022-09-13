@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-void t1(int b, int c) {
+void t1(double b, double c) {
     if (b == 0) {
         if (c == 0) {
             std::cout << "Любое число";
@@ -12,7 +12,7 @@ void t1(int b, int c) {
     }
     std::cout << std::endl;
 }
-void t2(int a, int b, int c) {
+void t2(double a, double b, double c) {
     if (a == 0) {
         t1(b, c);
     } else {
@@ -35,11 +35,10 @@ void lds(bool l, bool d, bool s) {
         std::cout << "Темно";
     }
 }
-
 int main()
 {
     setlocale(LC_ALL, "Rus");
-    int a,b,c;
+    double a,b,c;
     bool d,s,l;
 
     std::cout<<"Введите коэффициенты b,c для уравнения вида b*x + c = 0"<< std::endl;
@@ -60,4 +59,4 @@ int main()
     lds(l,d,s);
 
     return 0;
-};
+}
